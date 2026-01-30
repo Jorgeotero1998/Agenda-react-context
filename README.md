@@ -1,73 +1,32 @@
-# WebApp Template with React JS
+﻿# Agenda Digital de Contactos - Desarrollo Profesional con React
 
+Esta aplicación es una **Agenda Digital** diseñada para la gestión organizada de contactos. Su función principal es permitir al usuario centralizar su red de contactos en una plataforma dinámica, permitiendo el almacenamiento, consulta y edición de información en tiempo real a través de una base de datos en la nube.
 
-Used by 4Geeks.com and 4Geeks Academy students, this template helps to bootstrap your first multi-page web applications by integrating with React latest version, vercel deployments and [Vite](https://4geeks.com/lesson/intro-to-vite-module-bundler) for bundling.
+## Funciones Principales de la Aplicación
 
-### Getting stated:
+La aplicación ha sido desarrollada para ofrecer una experiencia de usuario fluida mediante las siguientes funcionalidades:
 
-> 📦 Make sure you are using at least node version 20.
+* **Gestión Centralizada (CRUD):** El usuario puede registrar nuevos contactos, visualizar la lista completa con sus detalles, actualizar información existente y dar de baja registros de forma permanente.
+* **Validación de Seguridad:** Incorpora un sistema de confirmación mediante un componente modal que previene la eliminación accidental de contactos.
+* **Sincronización en Tiempo Real:** Gracias a la integración con una API externa, cualquier cambio realizado se refleja de inmediato en el servidor, garantizando la persistencia de los datos.
+* **Interfaz Interactiva:** La aplicación cuenta con transiciones suaves y una navegación intuitiva entre la lista principal y el formulario de edición.
 
-1. Install the node package dependencies by typing: `$ npm install`
+## Tecnologías Utilizadas
 
-2. Create a .env file by typing `$ cp .env.example .env`
+Para garantizar un rendimiento óptimo y un código escalable, se utilizaron:
 
-3. Start coding! and the vite dev server with live reload by typing: `$ npm run start`
+* **React.js & Context API:** Para la gestión de la lógica de negocio y el estado global de la agenda.
+* **React Router DOM:** Para el manejo de las vistas y navegación interna.
+* **Framer Motion:** Para añadir una capa de interactividad y animaciones profesionales.
+* **Bootstrap:** Para el diseño responsivo y la estructura de componentes.
+* **Fetch API:** Para la comunicación asíncrona con el servidor de 4Geeks Academy.
 
+## Diseño Personalizado
 
-### Styling
+La identidad visual de la agenda se define por:
+* **Estética:** Un fondo con degradado lineal de negro a azul y celeste que resalta las tarjetas de contacto.
+* **Tipografía:** Fuente Poppins para un acabado moderno y profesional.
+* **UX:** Formulario optimizado y compacto para mejorar la velocidad de registro.
 
-You can update the `./index.css` or create new `.css` files and import them into your current css or js files depending on your needs.
-
-### Components
-
-Add more files into your `./src/components` or styles folder as you need them and import them into your current files as needed.
-
-💡Note: There is an example using the Context API inside `pages/demo.js`;
-
-### Pages
-
-Add more files into your `./js/pages` and import them in `./routes.jsx`.
-Each page must match at least one route inside `routes.jsx`
-
-### Centralized Store with useReducer
-
-This template comes with a centralized & general state that's shared with all pages and compoentes, we call it "the store".   
-
-The file `./src/store.js` has a default structure for the store, we encourage you to change it and adapt it to your data needs (for example, if you are doing a `Todo list` you will probably have a array of todos here).
-
-+ Learn [how the useReducer works](https://4geeks.com/lesson/optimize-react-components-usereducer).
-+ Read more about [implementing a global state with Context API](https://4geeks.com/lesson/context-api)
-+ Read more about [react hooks](https://content.breatheco.de/lesson/react-hooks-explained)
-
-The store `Provider` for this context is already set on `./src/main.jsx`. You can access the store from any component using the `useGlobalReducer` hook to get the `store` and `dispatcher`. Check `/views/demo.js` to see a demo. Here is a smaller sample:
-
-```jsx
-import useGlobalReducer from "./src/hooks/useGlobalReducer";
-
-const MyComponentSuper = () => {
-  //here you use the hook to get dispatcher and store
-  import { dispatch, store } = useGlobalReducer();
-
-  return <div>{/* you can use your actions or store inside the html */}</div>
-}
-```
-
-## Publish your website!
-
-1. **Vercel:** The FREE recomended hosting provider is [vercel.com](https://vercel.com/), you can deploy in 1 minutes by typing the following 2 commands:
-
-Login (you need to have an account):
-```sh
-$ npm i vercel -g && vercel login
-```
-Deploy:
-```sh
-$ vercel --prod
-```
-✎ Note: If you don't have an account just go to vercel.com, create a account and come back here.
-
-![Vercel example procedure to deploy](https://github.com/4GeeksAcademy/react-hello-webapp/blob/4b530ba091a981d3916cc6e960e370decaf2e234/docs/deploy.png?raw=true)
-
-## Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) and [CyberSecurity Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/cybersecurity).
+---
+**Desarrollado por Jorge** | Proyecto de Gestión de Datos y Desarrollo Front-End.
